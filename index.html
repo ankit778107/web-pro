@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <style>
+        /* This is the CSS section where you can style your elements */
+        body {
+            background-color: lightblue;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            width: 50%;
+            height: 400px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 200px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 10px;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .card-text {
+            font-size: 16px;
+        }
+
+        .card-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my landing page</h1>
+    <div class="container">
+        <!-- This is the HTML section where you can add your elements -->
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1677653128215-43b4e3732d17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8TThqVmJMYlRSd3N8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="Product A" class="card-image">
+            <div class="card-content">
+                <p class="card-title">Product A</p>
+                <p class="card-text">This is a description of product A. It has some amazing features and benefits.</p>
+                <button class="card-button">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1677653128215-43b4e3732d17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8TThqVmJMYlRSd3N8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="Product B" class="card-image">
+            <div class="card-content">
+                <p class="card-title">Product B</p>
+                <p class="card-text">This is a description of product B. It has some amazing features and benefits.</p>
+                <button class="card-button">Buy Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1677653128215-43b4e3732d17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDN8TThqVmJMYlRSd3N8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60" alt="Product C" class="card-image">
+            <div class="card-content">
+                <p class="card-title">Product C</p>
+                <p class="card-text">This is a description of product C. It has some amazing features and benefits.</p>
+                <button class="card-button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // This is the JavaScript section where you can add your functionality
+        // For example, you can add an event listener to the buttons to perform some action
+        let buttons = document.getElementsByClassName("card-button");
+        for (let i = 0; i < buttons.length; i++) {
+          buttons[i].addEventListener("click", function() {
+              alert("You clicked on button " + (i + 1));
+          });
+        }
+    </script>
+</body>
+</html>
